@@ -16,10 +16,16 @@ public class Translator {
 		String[] words = inputString.split(" ");
 		
 		List<String> translatedWords = new ArrayList<String>();
+		
 		for(int x = 0; x < words.length; x++){
 			translatedWords.add(pigLatin(words[x]));
 		}
-		System.out.println(translatedWords);
+		
+		for(String j : translatedWords){
+			System.out.print(j + " ");	
+			
+		}
+		
 		input.close();
 	}
 
